@@ -3,12 +3,16 @@
 ## Links
 
 Reading
+* https://arxiv.org/abs/1901.00596 A comprehensive study of Graph Neural Networks.
+
+Read
 * https://towardsdatascience.com/a-gentle-introduction-to-graph-neural-network-basics-deepwalk-and-graphsage-db5d540d50b3
+* https://towardsdatascience.com/an-introduction-to-graph-neural-networks-e23dc7bdfba5
 
 Unread
+* Deep walk paper http://www.perozzi.net/publications/14_kdd_deepwalk.pdf
+* Original GNN paper http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1015.7227&rep=rep1&type=pdf
 * https://arxiv.org/pdf/1812.08434.pdf Graph neural networks, a review of methods and aplications.
-* https://towardsdatascience.com/an-introduction-to-graph-neural-networks-e23dc7bdfba5
-* https://arxiv.org/abs/1901.00596
 * http://snap.stanford.edu/proj/embeddings-www/files/nrltutorial-part2-gnns.pdf
 * https://github.com/thunlp/GNNPapers
 * https://medium.com/@BorisAKnyazev/tutorial-on-graph-neural-networks-for-computer-vision-and-beyond-part-1-3d9fada3b80d
@@ -17,7 +21,7 @@ Unread
 
 
 * https://www.kaggle.com/c/FacebookRecruiting/data facebook friend recommender competition. sample network
-
+* https://www.kaggle.com/c/champs-scalar-coupling deep learning chemistry
 * https://arxiv.org/pdf/1806.01973.pdf PIN SAGE Paper.
 
 -------------------------------------
@@ -106,6 +110,31 @@ given a network of pins in a pinterest account. you can recommend similar pins t
 
 We are learning the represenations of nodes in a graph using neural networks! if you are familiar with represenational learning, these embeddings we are computing can be called as represenations of nodes.
 
+
+
+## An introduction to graph neural networks blog post
+https://towardsdatascience.com/an-introduction-to-graph-neural-networks-e23dc7bdfba5
+
+two kinds of graph convolutions
+spatial graph convoltions
+spectral graph convolutions
+
+spectral is complex stuff
+
+spatial is what we partially described in the first section.
+
+I think I finally got the intuition of what GNN's in general are
+graphs are a very common data type, we see them everywhere. sort of like images.
+neural networks work very well on image datasets, and we have things like convolution, pooling and etc to extract features from images??
+we want the same to happen for graphs.. like what can be the analog of convolution in case of graphs.
+
+what are the kinds of problems we can solve or forsee using GNN's?
+1. node classification/prediction: given a huge network? with labeled nodes? can we predict what other nodes are? the example this post suggests is subject of a paper in a citation network..
+2. graph  classification: given a set of labeled graphs, can we predict what some new graph is. example is identifying a given molecule is toxic or not based on its molecular structure.
+3. edge classification: given a massive friend network.. can we predict two disconnected people can be friends
+4. graph generation: coming up with new cool chemicals or molecules from existing ones
+
+we dont want to manually do feature engineering.. we want a new mechanism like convolution in case of images for graphs.
 
 
 
